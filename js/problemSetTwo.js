@@ -123,7 +123,7 @@ function primeNumbers(upperLimit) {
         let sum = i;
         while( sum <= 100) {
             sum += i;
-            //notPrime.push(sum);
+            notPrime.push(sum);
         }
     }
 
