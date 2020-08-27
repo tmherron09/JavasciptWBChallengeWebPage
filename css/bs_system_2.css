@@ -1,0 +1,252 @@
+.features-blue {
+    color: #fff;
+    background: linear-gradient(135deg, #172a74, #21a9af);
+    background-color: #184e8e;
+    padding-bottom: 30px;
+}
+
+@media(max-width:767px) {
+    .features-blue {
+        padding-bottom: 10px;
+    }
+}
+
+.features-blue p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.features-blue h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media(max-width:767px) {
+    .features-blue h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.features-blue .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 60px;
+}
+
+@media(max-width:767px) {
+    .features-blue .intro {
+        margin-bottom: 40px;
+    }
+}
+
+.features-blue .item {
+    min-height: 100px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+}
+
+@media(max-width:767px) {
+    .features-blue .item {
+        min-height: 0;
+    }
+}
+
+.features-blue .item .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.features-blue .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.features-blue .item .icon {
+    font-size: 40px;
+    color: #ffcc1e;
+    float: left;
+    margin-left: -65px;
+}
+.highlight-phone {
+    color: #313437;
+    background-color: #eef4f7;
+    padding: 50px 0 55px;
+    overflow: hidden;
+}
+
+@media(max-width:767px) {
+    .highlight-phone {
+        text-align: center;
+    }
+}
+
+.highlight-phone p {
+    color: #7d8285;
+}
+
+.highlight-phone h2 {
+    font-weight: bold;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit;
+}
+
+.highlight-phone .intro {
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+@media(max-width:767px) {
+    .highlight-phone .intro {
+        max-width: none;
+    }
+}
+
+.highlight-phone .intro p {
+    margin-bottom: 35px;
+}
+
+.highlight-phone .intro .btn {
+    padding: 16px 32px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 1;
+}
+
+.highlight-phone .intro .btn:hover {
+    opacity: 1;
+}
+
+.highlight-phone .intro .btn:active {
+    transform: translateY(1px);
+}
+
+.highlight-phone .intro .btn-primary {
+    background-color: #055ada;
+    color: #fff;
+}
+
+.highlight-phone .iphone-mockup {
+    position: relative;
+    max-width: 260px;
+    margin-top: -30px;
+    margin-bottom: -230px;
+    transform: rotate(-15deg);
+}
+
+.highlight-phone .iphone-mockup img.device {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-phone .iphone-mockup .screen {
+    position: absolute;
+    width: 88%;
+    height: 77%;
+    top: 12%;
+    border-radius: 2px;
+    left: 6%;
+    border: 1px solid #444;
+    background-color: #aaa;
+    overflow: hidden;
+    background: url('blob:https://bootstrapstudio.io/725740ec-d2b4-4b94-b269-d6d045bff09e');
+    background-size: cover;
+    background-position: center;
+}
+
+.highlight-phone .iphone-mockup .screen:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 140%;
+    top: -12%;
+    right: -60%;
+    transform: rotate(-19deg);
+    opacity: 0.2;
+}
+.login-clean {
+    background: #f1f7fc;
+    padding: 80px 0;
+}
+
+.login-clean form {
+    max-width: 320px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-clean .illustration {
+    text-align: center;
+    padding: 0 0 20px;
+    font-size: 100px;
+    color: rgb(244, 71, 107);
+}
+
+.login-clean form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 8px;
+    height: 42px;
+}
+
+.login-clean form .btn-primary {
+    background: #f4476b;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.login-clean form .btn-primary:hover,
+.login-clean form .btn-primary:active {
+    background: #eb3b60;
+}
+
+.login-clean form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.login-clean form .forgot {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.login-clean form .forgot:hover,
+.login-clean form .forgot:active {
+    opacity: 1;
+    text-decoration: none;
+}

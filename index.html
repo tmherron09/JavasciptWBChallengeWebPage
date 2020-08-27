@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Javascript Whiteboard</title>
+        <!-- By Tim H. -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bs_system.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bs_system_2.css" >
+
+        <style>
+            body {
+                background-color: #f1f7fc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="highlight-phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="intro">
+                            <h2>Javascript Whiteboard Problems</h2>
+                            <p>A visual testing area for the Javascript functions. And a great place to test DOM manipulation!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-none d-md-block iphone-mockup"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start of function panels Row 1 -->
+        <div class="row border-top">
+            
+            <!-- Reverse String -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    <div class="illustration">
+                        <i class="fa fa-backward"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter String to reverse." id="reverseInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="reverseDisplay" class="form-control" placeholder="Click to view output" disabled="true"  value="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="reverseBtn" type="button" onclick="callReverse()">Reverse String</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block"  type="button" onclick="clearReverse()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Capitalize Words -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    <div class="illustration">
+                        <i class="fa fa-text-height"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter String to Capitalize." id="capitalizeWorldsInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="capitalizeWorldsDisplay" class="form-control" placeholder="Click to view output" disabled="true"  value="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="capitalizeBtn" type="button" onclick="callCapitalizeWords()">Capitalize String</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button" onclick="clearCapitalize()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Compress String -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    
+                    <div class="illustration">
+                        <i class="fa fa-compress"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter String to Compress." id="compressInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="compressDisplay" class="form-control" placeholder="Click to view output" disabled="true"  value="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="compressBtn" type="button" onclick="callCompressString()">Compress String</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button" onclick="clearCompressString()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Start of function panels Row 2 ------------------------------------------------------------------------->
+        <div class="row">
+            
+            <!-- Palindrome -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    <div class="illustration">
+                        <i class="fa fa-align-center"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Check Palindrome." id="palindromeInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="palindromeDisplay" class="form-control" placeholder="Click to view output" disabled="true"  value="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="palindromeBtn" type="button" onclick="callPalindrome()">Check Palindrome</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block"  type="button" onclick="clearPalindrome()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+    
+            <!-- Happy Number -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    <div class="illustration">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Happy Numbers Start" id="happyStartInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Happy Numbers End" id="happyEndInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="capitalizeBtn" type="button" onclick="callhappyNumbersRange()">View Happy Numbers</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button" onclick="clearhappyNumbersRange()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Happy Modal -->
+            <div class="modal" id="happyModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Happy Numbers</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body" id="happyNumbersModal">
+                    
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+
+            <!-- Fibonacci -->
+            <div class="d-inline-block col-md-4 login-clean">
+                <form method="post">
+                    <div class="illustration">
+                        <i class="fa fa-subscript"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Fibonacci Start" id="fibInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Number of Terms" id="termInput" autocomplete="off" required="" minlength="3">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="fibBtn" type="button" onclick="callFib()">View Fibonacci Numbers</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button" onclick="clearFib()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Fib Modal -->
+            <div class="modal" id="fibModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Fibonacci Numbers</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body" id="fibNumbersModal">
+                    
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+
+
+    
+            
+
+            
+        </div>
+
+
+        <div class="row">
+            <!-- Prime Numbers -->
+            <div class="d-inline-block col-md-4 login-clean mx-auto">
+                <form method="post">
+                    
+                    <div class="illustration">
+                        <i class="fa fa-paragraph"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Upper Limit Prime Numbers" id="primeInput" autocomplete="off" required="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" id="primeBtn" type="button" onclick="callPrime()">View Prime Numbers</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button" onclick="clearPrime()">Clear Display</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Prime Modal -->
+            <div class="modal" id="primeModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Prime Numbers</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body" id="primeNumbersModal">
+                    
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/problemSetOne.js"></script>
+        <script src="js/problemSetTwo.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        
+    </body>
+</html>
